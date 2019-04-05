@@ -18,13 +18,11 @@ let transporter = nodemailer.createTransport({
 });
 
 let HelperOptions = {
-  from: '"NAME" <YOUREMAIL',
-  to: process.env.EMAIL,
+  from: '"YOURNAME" <YOUREMAIL',
+  to: 'YOURFRIENDEMAIL@GMAIL.COM',
   subject: 'awesome subject',
   text: 'Awesome MSG'
 };
-
-
 
   transporter.sendMail(HelperOptions, (error, info) => {
     if (error) {
